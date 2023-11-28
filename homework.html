@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>Submit</button>
+  <script>
+    const MED = 'Medicine_University';
+    const MTU =  'Mandalay_Technology_University';
+    const TUM = 'Technology_University_Mandalay';
+    const CUM = 'Computer_Univeresity_Mandalay';
+    const MUE = 'Monywa_University_of_Economics';
+    const YDNB = 'YadanarBon_University';
+
+    let myan = prompt('Enter your Mark');
+    let eng = prompt('Enter your Mark');
+    let math = prompt('Enter your Mark');
+    let phys = prompt('Enter your Mark');
+    let chem = prompt('Enter your Mark');
+    let bio = prompt('Enter your Mark');
+
+    if(myan === '' || eng === '' || math === '' || phys === '' || chem === '' || bio === ''){
+      alert('Number cannot be blank');
+    }else if(myan===null || eng===null || math===null || phys===null || chem===null || bio===null){
+      alert('Number cannot be null');
+    }else if(Number(myan).toString()==='Nan' || Number(eng).toString()==='Nan' || Number(math).toString()==='Nan' || Number(phys).toString()==='Nan' || Number(chem).toString()==='Nan' || Number(bio).toString()==='Nan'){
+        alert('Not a number')
+    }else{
+      let result = 0;
+      if(myan>0 && myan < 100){
+        if(myan < 40){
+          alert('You fail Exam!');
+        }else if(mayn > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += myan;
+
+          if(eng>0 && eng < 100){
+        if(eng < 40){
+          alert('You fail Exam!');
+        }else if(eng > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += eng;
+
+          if(math>0 && math < 100){
+        if(math < 40){
+          alert('You fail Exam!');
+        }else if(math > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += math;
+
+          if(phys>0 && phys < 100){
+        if(phys < 40){
+          alert('You fail Exam!');
+        }else if(phys > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += phys;
+
+          if(chem>0 && chem < 100){
+        if(chem < 40){
+          alert('You fail Exam!');
+        }else if(chem > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += chem;
+
+          if(bio>0 && bio < 100){
+        if(bio < 40){
+          alert('You fail Exam!');
+        }else if(bio > 100){
+          alert('You are PowerRanger!');
+        }else{
+          result += bio;
+
+          if(result >= 500){
+            console.log(`You are aviable university : ${MED} , ${MTU} , ${TUM} , ${CUM} , ${MUE} , ${YDNB}`);
+          }else if(result >= 450){
+            console.log(`You are aviable university : ${TUM} , ${CUM} , ${MUE} , ${YDNB}`);
+          }else if(result >= 400){
+            console.log(`You are aviable university : ${CUM} , ${MUE} , ${YDNB}`);
+          }else if(result >= 350){
+            console.log(`You are aviable university : ${MUE} , ${YDNB}`);
+          }else{
+            console.log(`You are aviable university : ${YDNB}`);
+          }
+        }
+      }
+    }
+
+
+
+  </script>
+</body>
+</html>
